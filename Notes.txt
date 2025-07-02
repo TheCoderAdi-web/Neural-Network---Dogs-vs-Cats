@@ -1,0 +1,98 @@
+ARRAYS:
+
+Arrays can be of different orders or dimensions, a 1D array is called
+a vector, and is a simple list. A 2D array is called a matrix, in which
+there is a list, which has lists inside of it, often referred to as Nested lists, or
+Lists Of Lists (LOLs).
+
+DOT PRODUCT:
+
+A dot product is the output of multiplying each item of a matrix by another
+item of a different matrix. For example:
+
+The dot product of the following is:
+
+[[1, 5, 6, 3, 8],
+ [3, 5, 6, 9, 0],
+ [4, 6, 7, 7, 9]]
+
+[[2, 7, 4, 2, 8],
+ [4, 3, 6, 3, 3],
+ [5, 9, 9, 4, 6]]
+
+The dot product of the above arrays would be:
+
+          First Row of Matrixes
+-------------------|-----------------
+1 x 2 + 5 x 7 + 6 x 4 + 3 x 2 + 8 x 8
+
+We would repeat the above for the rest of the rows.
+
+TRANSPOSING:
+
+To transpose a matrix, is to make a new matrix and fill that matrix by
+turing the rows in the original matrix into columns of the new matrix.
+For Example:
+
+matrix1 = [[2, 5, 6, 7],
+           [3, 4, 8, 9],
+           [7, 8, 9, 0]]
+
+transposedMatrix = [[2, 3, 7],
+                    [5, 4, 8],
+                    [6, 8, 9],
+                    [7, 9, 0]]
+
+
+ACTIVATION FUNCTIONS:
+
+An activation function is a mathematical function that decides the output 
+of a neuron.
+
+There are multiple activation functions, and one of them is step functions.
+Step functions look at the output of a neuron and check if it is more than,
+equal to, or less than 0. If it is more than 0, the output will be 1. If the
+output is equal to or less than 0, the output will be 0. A step function happens
+after the inputs times the weights plus the bias is calculated.
+
+A sigmoid function is like a step function except it is more granular, or more
+specific. Just like a step function, it is done after the inputs times the weights
+plus the bias is calculated.
+
+A rectified linear function is an activation function that still outputs a 0
+or a 1, (like a step function), but can also give a granular output, (like a
+sigmoid function). This function takes place after the inputs times the weights
+plus the biases is calculated like the above two activation functions.
+
+A linear function is a function that only outputs 0s and positive numbers and cannot
+provide non-linear values. If you tried to, your best result would be far from the
+desired outcome. This function takes place after the inputs times the weights plus
+the biases is calculated.
+
+A softmax function is used for the output layer of any neural network. This function
+takes the input (output of the previous layers), exponentiates it using Euler's number
+to make sure that we get rid of negative numbers while still keeping their meaning, normalize
+the exponentiated numbers, and turn that into percentages as output. The combination of the
+exponentiatiin and normalization is what makes the Softmax activation function.
+
+ONE HOT ENCODING:
+
+One hot encoding in neural networks is making a vector which has as many items as there are
+classes. At the target index in this vector, the target probability is given.
+
+For example I have three classes, cat, dog, and lizard. If I gave an image of a lizard, the
+one-hot encoding would look something like this:
+
+ Cat    dog   lizard
+  |      |      |
+[ 0,     0  ,   1]
+
+NATURAL LOGARITHM:
+
+A logarithm is the inverse operation of exponentiation, essentially asking "to what power must 
+a base be raised to get a given number?" In simpler terms, it tells you the exponent needed to 
+produce a specific result when raising a base to that power. For example, the logarithm of 100 
+to base 10 is 2, because 10 raised to the power of 2 is 100. 
+
+When someone specifies log without any base number, they are refering to the natural log (ln).
+The natural log is log base E (Euler's number = 2.718281828459045).
